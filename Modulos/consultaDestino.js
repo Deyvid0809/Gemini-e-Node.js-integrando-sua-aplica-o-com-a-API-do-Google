@@ -1,7 +1,7 @@
 import { GoogleGenAI } from "@google/genai";
 import { fazerPergunta} from "./perguntas.js";
 
-const ai = new GoogleGenAI({ apiKey: "GEMINI_API_KEY" });
+const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
 export async function consultar() {
 
