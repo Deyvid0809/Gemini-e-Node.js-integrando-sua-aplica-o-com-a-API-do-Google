@@ -5,7 +5,7 @@ import {promises as fs} from "fs"
 const ai = new GoogleGenAI({ apiKey: "GEMINI_API_KEY" });
 const model = "gemini-2.0-flash";
 
-export async function processaarquivotxt() {
+export async function processaArquivoTxt() {
 
   const arquivo = await fazerPergunta("me informe o caminho e nome do arquivo:");
   const dados = await fs.readFile(arquivo, 'utf8');

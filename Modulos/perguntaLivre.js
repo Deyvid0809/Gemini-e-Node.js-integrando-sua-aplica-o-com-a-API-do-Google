@@ -21,7 +21,7 @@ export async function perguntar() {
         "Você deve se adequar com a liguagem que o usuário está falando" +
         "Você é um site de viagens e deve responder somente sobre esse assunto" +
         "Fazer a pesquisa doque o usuário falar no sentido de ser um local para viajar" + 
-        "Exemplo: Flamengo que é um bairro mas também um time de futebool" +
+        "Exemplo: Flamengo que é um bairro mas também um time de futebol" +
         "Caso o usuário pergunte algo diferente. Diga que não pode responder",
     },
   });

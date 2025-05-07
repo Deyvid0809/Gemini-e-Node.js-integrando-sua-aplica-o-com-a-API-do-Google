@@ -1,7 +1,7 @@
-import { fazerPergunta } from './perguntas.js';
-import { perguntar } from './perguntaLivre.js';
-import { consultar } from './consultaDestino.js';
-import { processaarquivotxt } from './Analise.js';
+import { fazerPergunta } from './Modulos/perguntas.js';
+import { perguntar } from './Modulos/perguntaLivre.js';
+import { consultar } from './Modulos/consultaDestino.js';
+import { processaArquivoTxt } from './Modulos/Analise.js';
 
 async function principal() {
   const escolha = await fazerPergunta(`Escolha uma das opções abaixo: \n
@@ -15,7 +15,7 @@ async function principal() {
   } else if (escolha === '2') {
     await consultar();
   } else if (escolha === '3') {
-    await processaarquivotxt();
+    await processaArquivoTxt();
   } else {
     console.log('Escolha inválida.');
   }
